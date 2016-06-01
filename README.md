@@ -10,8 +10,8 @@ iOS socks SDK <br>
 <br>
 > GSSAPI协商
 
-#协商格式，Client封装的数据包，请求socks Server协商方式
-#pragma mark -- 开始协商
+1、协商格式，Client封装的数据包，请求socks Server协商方式
+pragma mark -- 开始协商
 /**
  *  Sends the SOCKS5 open/handshake/authentication data, and starts reading the response.
  *  We attempt to gain anonymous access (no authentication).
@@ -30,7 +30,7 @@ iOS socks SDK <br>
  *  @param rmSocket remote Socket
  */
 <br>
-#Socks服务器返回的协商方式
+2、Socks服务器返回的协商方式
 /**
  *  读取与Proxy Server 协商返回的结果
  *
@@ -49,8 +49,8 @@ iOS socks SDK <br>
  */
 
 <br>
-#根据socks server 返回的协商方式，验证socks server，此处采用Username/Password验证，验证需封装的数据包格式如下
-#pragma mark -- 封装USERNAME/PASSWORD 为Package
+3、根据socks server 返回的协商方式，验证socks server，此处采用Username/Password验证，验证需封装的数据包格式如下
+pragma mark -- 封装USERNAME/PASSWORD 为Package
 /**
  *  封装username/password为package
  *        +-----+-------------+----------+-------------+------------
@@ -63,7 +63,7 @@ iOS socks SDK <br>
  */
 
 <br>
-#验证结果，验证socks server后返回的结果， 0x00表示success，否则fail
+4、验证结果，验证socks server后返回的结果， 0x00表示success，否则fail
 /**
  *  Server response for username/password authentication:
  *  field 1: version, 1 byte
@@ -72,4 +72,4 @@ iOS socks SDK <br>
  *  any other value = failure, connection must be closed
  */
 <br>
-<img src="https://github.com/Visitor-sos/iOS-Socks-SDK/blob/master/response.png" alt="Drawing" width="350px" height="550px" />
+<img src="https://github.com/Visitor-sos/iOS-Socks-SDK/blob/master/response.png" alt="Drawing" width="600px" height="500px" />
