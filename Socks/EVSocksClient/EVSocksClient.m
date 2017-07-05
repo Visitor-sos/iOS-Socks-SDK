@@ -13,7 +13,6 @@
 //#define EServerPassword @"ServerPassword"
 //#define EServerMethod @"ServerMethod"
 
-// dosomething
 
 #import "EvSocksClient.h"
 #include "encrypt.h"

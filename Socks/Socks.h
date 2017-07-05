@@ -11,6 +11,11 @@
 #import "EVSocksClient.h"
 #import "EVProxyProtocol.h"
 
+// 该文件是整个SDK的头文件
+// 使用SDK时导入该文件即可
+
+// 在master分支对其进行了修改
+
 
 //! Project version number for Socks.
 FOUNDATION_EXPORT double SocksVersionNumber;
