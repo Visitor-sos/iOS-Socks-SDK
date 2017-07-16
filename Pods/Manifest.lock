@@ -1,10 +1,17 @@
 PODS:
   - SBJson (4.0.2)
+  - SDWebImage (4.0.0-beta2):
+    - SDWebImage/Core (= 4.0.0-beta2)
+  - SDWebImage/Core (4.0.0-beta2)
 
 DEPENDENCIES:
   - SBJson (~> 4.0.2)
+  - SDWebImage (~> 4.0.0-beta2)
 
 SPEC CHECKSUMS:
-  SBJson: c18691cc18375b14664ff0fec841f8c4faef1934
+  SBJson: 16404e557ff6346b506e9e12f2d83e6782f37f6f
+  SDWebImage: e379f33106cf8d6766f970c0ef1c3fb609c94d78
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 3c9954801b80e821d31b4de8449c5a7501695628
+
+COCOAPODS: 1.2.1
