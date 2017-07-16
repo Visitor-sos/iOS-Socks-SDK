@@ -222,9 +222,19 @@ NSString *const EVVerificationErrorDomain = @"EVVerificationErrorDomain";
     return [NSError errorWithDomain:EVVerificationErrorDomain code:EVVerificationErrorServerAddressNil userInfo:userInfo];
 }
 
+
+/**
+ Socks1 获取idfa
+
+ @param NSString NSString
+ @return IDFA
+ */
 #pragma mark - idfa
 - (NSString *)getDevceIDFA {
     return [[[ASIdentifierManager sharedManager] advertisingIdentifier] UUIDString];
 }
+
+
+
 
 @end
